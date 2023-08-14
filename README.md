@@ -5,4 +5,5 @@ To create a project will be used:
 1
 2
 3
-4
+4   pipenv shell
+    python .\manage.py runserver
