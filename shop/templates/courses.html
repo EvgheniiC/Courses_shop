@@ -9,12 +9,14 @@
         </tr>
     </thead>
     <tbody>
+        {% for course in courses %}
         <tr>
-            <td>My Corse</td>
-            <td>Programming</td>
-            <td>59.99</td>
-            <td>200</td>
+            <td>{{course.title}}</td>
+            <td>{{course.category}}</td>
+            <td>{{course.price}}</td>
+            <td>{{course.students_qty}}</td>
             <td><button>Buy</button></td>
         </tr>
+        {% endfor %}
     </tbody>
 </table>
