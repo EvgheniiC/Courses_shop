@@ -18,8 +18,8 @@
     <tbody>
         {% for course in courses %}
         <tr>
-            {% comment %} single_course from url.pu name='single_course' {% endcomment %}
-            <td> <a href="{% url "single_course" course.id%}">{{course.title}} </a> </td>
+            {% comment %} single_course from url.pu name='single_course' and shop: is a app_name = "shop"{% endcomment %}
+            <td> <a href="{% url "shop:single_course" course.id%}">{{course.title}} </a> </td>
             <td>{{course.category}}</td>
             <td>{{course.prise}}</td>
             <td>{{course.students_qty}}</td>
