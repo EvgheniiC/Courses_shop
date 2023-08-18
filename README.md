@@ -7,4 +7,5 @@ To create a project will be used:
 2 pipenv shell
 3 python .\manage.py runserver
 
+python manage.py startapp api -> new API for shop
     
