@@ -1,3 +1,16 @@
-from django.db import models
+from tastypie.resources import ModelResource
+from shop.models import Category, Course
 
-# Create your models here.
+
+class CategoryResourse(ModelResource):
+    class Meta:
+        queryset = Category.objects.all()
+        resourse_name = 'categories'
+        allowed_methods = ['get']
+
+
+class CourseResourse(ModelResource):
+    class Meta:
+        queryset = Course.objects.all()
+        resourse_name = 'courses'
+        allowed_methods = ['get', 'post', 'delete']
