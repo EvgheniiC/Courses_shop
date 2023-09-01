@@ -24,6 +24,10 @@ category_resourse = CategoryResourse()
 api.register(course_resourse),
 api.register(category_resourse)
 
+# api/v1/courses/ GET,POST
+# api/v1/courses/1/ GET,Delete
+# api/v1/categiries/ GET
+# api/v1/categiries/1/ GET
 
 urlpatterns = [
     path('admin/', admin.site.urls),
