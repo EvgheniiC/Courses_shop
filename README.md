@@ -1,4 +1,4 @@
-# Courses_shop
+# Courses_shop 
 Django(python)
 A training project for using some of Django's new features.
 Here you can buy various courses, see reviews from students, various categories for courses. Database - skllite3
